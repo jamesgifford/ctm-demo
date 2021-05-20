@@ -1,3 +1,14 @@
+# CTM Demo for James Gifford
+
+## Storing data example
+
+curl -X POST -H "Content-Type: application/json" -s http://ctm.demo.test/signups -d '{"email":"james@jamesgifford.com","first_name":"James","last_name":"Gifford","opt_in":1}'
+
+## Updating data example (opting-out)
+
+curl -X PUT -H "Content-Type: application/json" -s http://ctm.demo.test/signups -d '{"email":"james@jamesgifford.com","first_name":"James","last_name":"Gifford","opt_in":0}'
+
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)

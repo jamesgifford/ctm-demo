@@ -13,6 +13,9 @@
 |
 */
 
+$router->post('/signups', 'SignupsController@store');
+$router->put('/signups', 'SignupsController@update');
+
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
